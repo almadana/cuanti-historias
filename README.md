@@ -17,7 +17,6 @@ investigaciones:
 
 - Portada y recorrido general.
 - Primera historia completa: **¿Discriminaba Berkeley?**
-- Segunda historia completa: **¿Qué porcentaje de qué?**
 - Datos reales de UCBAdmissions.
 - Narrativa por scroll, predicción inicial, exploración por departamento y
   pregunta de cierre.
@@ -47,7 +46,5 @@ Requiere Node.js 22 o superior. Los comandos principales son:
 
 - app/page.tsx: portada y recorrido.
 - app/lecciones/berkeley/page.tsx: primera lección.
-- app/lecciones/porcentajes/page.tsx: segunda lección.
 - components/SimpsonStory.tsx: narrativa e interactividad.
-- components/TableStory.tsx: tablas y porcentajes condicionales.
 - app/globals.css: sistema visual y diseño responsive.
