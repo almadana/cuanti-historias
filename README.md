@@ -40,8 +40,23 @@ Requiere Node.js 22 o superior. Los comandos principales son:
 
 - npm install
 - npm run dev
+- npm run build:pages
 - npm run lint
 - npm test
+
+`npm run build:pages` genera el sitio estático en `out/`. El resultado contiene
+solamente HTML, CSS, JavaScript y recursos públicos: no necesita servidor,
+base de datos ni funciones de backend.
+
+## GitHub Pages
+
+El workflow `.github/workflows/pages.yml` compila y publica automáticamente el
+sitio cuando hay cambios en `main`. En la configuración del repositorio hay que
+seleccionar **GitHub Actions** como fuente de GitHub Pages.
+
+El build adapta las rutas al nombre del repositorio y copia `.nojekyll` dentro
+de `out/`, por lo que las rutas de las lecciones y los archivos de Next funcionan
+correctamente bajo `https://almadana.github.io/cuanti-historias/`.
 
 ## Estructura principal
 

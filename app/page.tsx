@@ -179,7 +179,7 @@ export default function Home() {
               </>
             );
 
-            return lesson.available ? (
+            return lesson.available && lesson.href ? (
               <Link
                 href={lesson.href}
                 className={`lesson-card ${lesson.tone}`}

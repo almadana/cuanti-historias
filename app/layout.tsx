@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH?.trim() ?? "";
+const basePath = configuredBasePath
+  ? `/${configuredBasePath.replace(/^\/+|\/+$/g, "")}`
+  : "";
+
 export const metadata: Metadata = {
   title: {
     default: "Cuanti — Historias con datos",
@@ -19,8 +24,8 @@ export const metadata: Metadata = {
     description: "Mirá, tocá y poné a prueba tus intuiciones con datos reales.",
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: `${basePath}/favicon.svg`,
+    shortcut: `${basePath}/favicon.svg`,
   },
 };
 
