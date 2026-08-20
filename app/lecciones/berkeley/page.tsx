@@ -73,13 +73,13 @@ export default function BerkeleyLesson() {
             <p>Una diferencia observada no identifica por sí sola su causa.</p>
           </article>
         </div>
-        <div className="next-lesson">
+        <Link className="next-lesson" href="/lecciones/porcentajes">
           <div>
             <small>Próxima historia</small>
             <strong>¿Qué porcentaje de qué?</strong>
           </div>
-          <span>Tablas y adolescentes uruguayos · en preparación</span>
-        </div>
+          <span>Tablas y adolescentes uruguayos <b aria-hidden="true">→</b></span>
+        </Link>
         <Link className="secondary-button" href="/">
           Volver al recorrido
         </Link>

@@ -17,8 +17,9 @@ const lessons = [
     title: "¿Qué porcentaje de qué?",
     description:
       "Adolescentes uruguayos, prevalencias y dos maneras muy distintas de leer la misma tabla.",
+    href: "/lecciones/porcentajes",
     tone: "green",
-    available: false,
+    available: true,
   },
   {
     number: "03",
